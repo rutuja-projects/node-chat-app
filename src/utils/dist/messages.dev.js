@@ -1,0 +1,22 @@
+"use strict";
+
+var generatemessage = function generatemessage(username, text) {
+  return {
+    username: username,
+    text: text,
+    createdAt: new Date().getTime()
+  };
+};
+
+var generatelocation = function generatelocation(username, url) {
+  return {
+    username: username,
+    url: url,
+    createdAt: new Date().getTime()
+  };
+};
+
+module.exports = {
+  generatemessage: generatemessage,
+  generatelocation: generatelocation
+};
